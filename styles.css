@@ -1,0 +1,226 @@
+* {
+  font-family: "Vazir", Tahoma, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .tasks {
+    margin-top: 5%;
+  }
+  .info {
+    font-size: 14px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .version{
+    font-size: 15px;
+  }
+  #task-input {
+    font-size: 14px;
+    width: 80%;
+  }
+  #button-task {
+    width: 9%;
+  }
+  .task-item {
+    width: 90%;
+    margin: auto;
+  }
+  .github, .log{
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+  }
+  #labelforinput {
+    display: none;
+  }
+}
+.amir{
+  font-size: 15px;
+  margin-top: 5px;
+  text-shadow: 1px 1px 10px mediumpurple;
+  font-style: italic;
+}
+.version {
+  margin-bottom: -30px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  font-family: monospace;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+#nav-button:hover {
+  transition: 0.4s ease-in-out;
+  font-size: 20px;
+}
+.info {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.todoheader{
+  margin-top: 10px;
+}
+/* .changebg .log{
+  border: 1px solid red;
+} */
+#body {
+  background: #151515;
+  color: white;
+}
+@keyframes gradient {
+  0% {
+    background: radial-gradient(
+      circle at center,
+      rgba(188, 255, 125, 0) 0%,
+      #fff 0%,
+      #fff 100%
+    );
+  }
+  75% {
+    background: radial-gradient(
+      circle at center,
+      rgba(149, 255, 125, 0.8) 74%,
+      #fff 75%,
+      #fff 100%
+    );
+  }
+}
+h1,
+p {
+  text-align: center;
+  margin-top: 25px;
+}
+p {
+  font-size: 17px;
+}
+.tasks {
+  margin-top: 1%;
+  text-align: center;
+}
+label {
+  font-size: 20px;
+}
+#task-input,
+#button-task {
+  font-size: 17px;
+  box-shadow: 4px 4px 1px #3c3c3c;
+  outline: none;
+}
+#task-input {
+  border: 1px solid black;
+  padding: 7px;
+  transition: 0.2s ease-in;
+  width: 300px;
+}
+#task-input:focus {
+  box-shadow: none;
+}
+#task-input::placeholder {
+  font-size: 14px;
+}
+#button-task {
+  padding: 5px;
+  margin-left: 1%;
+  background: none;
+  background: #fff;
+  outline: none;
+  transition: 0.1s ease-in;
+}
+#button-task:active {
+  animation: gradient 100ms;
+  background: #95ff7dcc;
+  color: #fff;
+  box-shadow: none;
+}
+.task-item {
+  display: flex;
+  justify-content: left;
+  border: 1px solid lightgray;
+  width: 350px;
+  margin: 35px auto;
+  padding-bottom: 16px;
+}
+.checkbox {
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 25px;
+  height: 22px;
+  width: 22px;
+}
+input[type="checkbox"]:checked {
+  accent-color: #25d753;
+}
+/* .contain-button {
+} */
+.github, .Log {
+  width: 150px;
+  height: 30px;
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.github:hover {
+  background: #212121;
+}
+.github{
+  margin-bottom: 15px;
+}
+.changebg{
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+.fas{
+  background: #820019;
+  font-size: smaller;
+  color: white;
+  border: none;
+  margin:23px 7px auto -15px;
+  height: 25px;
+  width: 30px;
+  transition: 0.3s ease-in-out;
+  border-radius: 2px;
+}
+.fas:hover{
+  background: white;
+  color: black;
+}
+.task-time{
+  float: right;
+}
+.coffee{
+  display: flex;
+  text-align: center;
+  height: 40px;
+}
+.coffee-contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+.tel{
+  color: cyan;
+  font-style: normal;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa - en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="newscript.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>ToDo List - لیست کار</title>
+  </head>
+  <body id="body">
+    <p class="amir">© created with 💜 by " <a class="tel" href="https://t.me/itsdekusenpai">Deku | Amir</a> " on Telegram</p>
+    <p class="version">V1.4.0 - Update on 7/8/2024 - 6:51 PM</p>
+    <span class="nav">
+      <p class="contain-button changebg">
+        <button class="Log" onclick="changecolor();">
+          Change BG Color
+        </button>
+      </p>
+      <p class="contain-button coffee-contain">
+        <a class="coffee" href="https://www.coffeebede.com/amirhosseind" target="_blank"><img class="img-fluid" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg" /></a>
+      </p>
+      <p class="contain-button">
+        <button class="github" id="nav-button" onclick="">
+          <a href="https://github.com/AmirSenpai">GitHub</a>
+        </button>
+      </p>
+    </span>
+    <h1 class="todoheader">todo list &nbsp;-&nbsp; لیست کار</h1>
+    <p class="info">
+      Write Down Your task here &nbsp;&nbsp;&nbsp;&nbsp; ↓
+      &nbsp;&nbsp;&nbsp;&nbsp;تسک خود را در اینجا بنویسید
+    </p>
+    <div class="tasks">
+      <label for="task-input" id="labelforinput">Task&nbsp;&nbsp;:&nbsp;</label>
+      <input
+        type="text"
+        name="task-input"
+        id="task-input"
+        maxlength="30"
+        autofocus
+        required
+        placeholder="Write here - اینجا بنویس"
+      />
+      <input
+        type="button"
+        value="✅"
+        id="button-task"
+        onclick="buttontask();"
+      />
+      <!--    <br>-->
+      <div id="task-div">
+        <ul id="task-list"></ul>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
